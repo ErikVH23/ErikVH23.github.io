@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="./styles/aboutMe.css">
     <link rel="stylesheet" href="./styles/header.css">
     <script type="text/javascript" src="./javascript/index.js"></script>
+    <Script src="lib/markdown.js"></Script>
     <style>
         body{
             background-color:snow;
@@ -40,20 +41,7 @@
     </div>
     <!--Work Experience-->
     <div id="workExperience" class="tabContent">
-        <!--PSTDL-->
-        <div>
-            <h3> Planetary Surface Technology Detelopment Labratory - Michigan Technological University</h3>
-            <ul>
-                <li>Item 1</li>
-            </ul>
-        </div>
-        <!--Aerospace-->
-        <div>
-            <h3> Planetary Surface Technology Detelopment Labratory - Michigan Technological University</h3>
-        </div>
-
-
-
+        <div id="mk"></div>
     </div>
     <!--Projects-->
     <div id="projects" class="tabContent">
@@ -71,6 +59,20 @@
         document.getElementById("workExperience").setAttribute("style", "display:none");
         document.getElementById("projects").setAttribute("style", "display:none");
         document.getElementById("contact").setAttribute("style", "display:none");
+    </script>
+    <script>
+
+        function Markdown(preview){
+            this.update = function(){
+                preview.innerHTML = markdown.toHTML(preview.value)
+            };
+            this.update();
+        }
+
+        var $ = function (id) {return document.getElementById(id);};
+
+        new Markdown($("## This is a Markdown File", $("mk"));
+
     </script>
 
 
