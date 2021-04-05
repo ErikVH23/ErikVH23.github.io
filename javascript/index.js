@@ -12,8 +12,10 @@ function changeTab(evt, elementID){
     //Displays new content
 
     document.getElementById(elementID).setAttribute("style", "display:block");
-    
 
+}
+
+function renderMD(ID){
 
 
 }

@@ -19,29 +19,13 @@ h5 {
     text-align: left;
 
 }
-ul {
-    list-style-type:none;
-    top: 0;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333;
-}
-li {
-    float: left;
-}
-li a {
-    display: inline;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-li a:hover {
-    background-color: #111;
-}
 img {
     border-radius: 13%;
+}
+
+.content {
+    position: relative;
+    float: left;
 }
 .tab {
     text-align: center;
@@ -69,3 +53,12 @@ img {
     font-size:28px;
 }
 
+
+.header {
+    
+    position:relative;
+    float: left;
+    height: 230px;
+    width: 600px;
+    
+}
