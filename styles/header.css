@@ -1,0 +1,43 @@
+.title {
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    margin-left: 0px;
+    margin-bottom: 0px;
+    font-size: 50px;
+    width: auto;
+    background-color: snow;
+}
+.contacts{
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    margin-left: 24px;
+    margin-top: 4px;
+    font-size: 20px;
+}
+.linkedinIcon {
+    width: 35px;
+    transition: 0.5s;
+    border-radius: 3mm;
+    margin-left: 10px;
+}
+.linkedinIcon:hover {
+    width: 45px;
+}
+.row:after {
+    content:"";
+    display:table;
+    clear:both;
+}
+.col_text {
+    display: inline-block;
+    width:400px;
+    position: relative;;
+    text-align: right;
+}
+.col_img {
+    display: inline-block;
+    width:100px;
+    position: relative;
+    top:10px;
+    left: -70px;
+}

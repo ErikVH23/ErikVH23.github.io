@@ -1,1 +1,79 @@
-"Hello World"
+<!DOCTYPE html>
+
+<html>
+<head>
+    <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="stylesheet" href="./styles/aboutMe.css">
+    <link rel="stylesheet" href="./styles/header.css">
+    <script type="text/javascript" src="./javascript/index.js"></script>
+    <style>
+        body{
+            background-color:snow;
+        }
+    </style>
+</head>
+
+<body>
+    
+    <!--Header of website-->
+    <div class="title">
+        <h1 class="title">Erik Van Horn</h1>
+        <div class="col_text"><h5 class="contacts">eavanhor@mtu.edu || 715-209-7522</h5></div>
+        <div class="col_img"><a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/erik-vanhorn-98aa66172/"><img  class="linkedinIcon" src="./images/Linkedin Icon.png" alt="Linkedin"></a></div>
+
+        
+    </div>
+    <!--Tabs-->
+    <div class="tab">
+        <button onclick="changeTab(event, 'aboutMe')">About Me</button>
+        <button onclick="changeTab(event, 'workExperience')">Work Experience</button>
+        <button onclick="changeTab(event, 'projects')">Projects</button>
+    </div>
+    <!--Content of each tab-->
+    <!--About Me-->
+    <div id="aboutMe" class="tabContent">
+        <h4 class="title">About Me</h4>
+        <div class="row">
+            <div class="col">col 1</div>
+            <div class="col">col 2</div>
+        </div>
+    </div>
+    <!--Work Experience-->
+    <div id="workExperience" class="tabContent">
+        <!--PSTDL-->
+        <div>
+            <h3> Planetary Surface Technology Detelopment Labratory - Michigan Technological University</h3>
+            <ul>
+                <li>Item 1</li>
+            </ul>
+        </div>
+        <!--Aerospace-->
+        <div>
+            <h3> Planetary Surface Technology Detelopment Labratory - Michigan Technological University</h3>
+        </div>
+
+
+
+    </div>
+    <!--Projects-->
+    <div id="projects" class="tabContent">
+        <h3>Projects</h3>
+    </div>
+    <!--Contact-->
+    <div id="contact" class="tabContent">
+        <h3>Contact</h3>
+        <h4><a href="https://www.linkedin.com/in/erik-vanhorn-98aa66172/"><img src="./images/Linkedin Icon.png" alt="Linkedin" class="linkedinIcon"></a></h4>
+        <h4>715-209-7522</h4>
+    </div>
+
+    <!--Clears all but home page when loaded-->
+    <script>
+        document.getElementById("workExperience").setAttribute("style", "display:none");
+        document.getElementById("projects").setAttribute("style", "display:none");
+        document.getElementById("contact").setAttribute("style", "display:none");
+    </script>
+
+
+</body>
+
+</html>

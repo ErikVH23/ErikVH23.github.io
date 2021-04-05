@@ -1,0 +1,17 @@
+
+
+
+.title {
+    text-align: left;
+    margin-left: 100px;
+    font-size: 20px;
+}
+.row:after {
+    content:"";
+    display:table;
+    clear:both;
+}
+.col {
+    float: left;
+    width:50%;
+}

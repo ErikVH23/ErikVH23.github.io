@@ -1,0 +1,71 @@
+body{
+    background-color: snow;
+}
+h1 {
+    font-family:'Times New Roman', Times, serif;
+    font-size: 40px;
+    text-align: center ;
+    margin-left: 30px;
+}
+h2 {
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: small;
+    font-weight: 100;
+    text-align: center;
+}
+h5 {
+    font-family: 'Times New Roman', Times, serif;
+    margin-left: 30px;
+    text-align: left;
+
+}
+ul {
+    list-style-type:none;
+    top: 0;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+li {
+    float: left;
+}
+li a {
+    display: inline;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+li a:hover {
+    background-color: #111;
+}
+img {
+    border-radius: 13%;
+}
+.tab {
+    text-align: center;
+    background-color: grey;
+    margin-top: 0;
+    margin: auto;
+    width: fit-content;
+    border-radius: 5mm;
+}
+.tab  button{
+    background-color: inherit;
+    float: center; 
+    border:none;
+    outline:none;
+    cursor:pointer;
+    padding: 16px 18px;
+    transition: 0.2s;
+    font-size: 25px;
+    font-family: 'Times New Roman', Times, serif;
+    border-radius: 5mm;
+    color: snow;
+}
+.tab button:hover {
+    background-color: lightblue;
+    font-size:28px;
+}
+
