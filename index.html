@@ -18,7 +18,7 @@
 </head>
 
 <body>
-    <div class="header">
+    <div id="header">
         <!--Header of website-->
         <div class="title">
             <h1 class="title">Erik Van Horn</h1>
@@ -31,48 +31,22 @@
             <button onclick="changeTab(event, 'workExperience')">Work Experience</button>
             <button onclick="changeTab(event, 'projects')">Projects</button>
         </div>
-        <!--Content of each tab-->
-        <!--About Me-->
+    </div>
+    <!--Content of each tab-->
+    <!--About Me-->
+    <section class="content">
         <div id="aboutMe" class="tabContent">
-            <h4 class="title">About Me</h4>
-            <div class="row">
-                <div class="col">col 1</div>
-                <div class="col">col 2</div>
-            </div>
+            <div id="aboutMe"></div>
         </div>
-    </div>
     <!--Work Experience-->
-    <div id="workExperience" class="tabContent">
-        <dev id="mk" class="content"></dev>
-        <script>
-            marked.setOptions({
-                renderer: new marked.Renderer(),
-                highlight: function(code, language) {
-                    const hljs = require('highlight.js');
-                    const validLanguage = hljs.getLanguage(language) ? language : 'plaintext';
-                    return hljs.highlight(validLanguage, code).value;
-                },
-                pedantic: false,
-                gfm: false,
-                breaks: false,
-                sanitize: false,
-                smartLists: true,
-                smartypants: false,
-                xhtml: false
-            });
-
-            
-            $.get('./workExperience.md', {}, function(data) {
-                console.log("Loaded Markdown");
-                console.log(data.toString());
-                document.getElementById("mk").innerHTML = DOMPurify.sanitize(marked(data));
-            });
-        </script>
-    </div>
-    <!--Projects-->
-    <div id="projects" class="tabContent">
-        <h3>Projects</h3>
-    </div>
+        <div id="workExperience" class="tabContent">
+            <dev id="workExperience"></dev>
+        </div>
+        <!--Projects-->
+        <div id="projects" class="tabContent">
+            <div id="projects"></div>
+        </div>
+    </section>
     <!--Contact-->
     <div id="contact" class="tabContent">
         <h3>Contact</h3>
@@ -82,9 +56,12 @@
 
     <!--Clears all but home page when loaded-->
     <script>
+
         document.getElementById("workExperience").setAttribute("style", "display:none");
         document.getElementById("projects").setAttribute("style", "display:none");
         document.getElementById("contact").setAttribute("style", "display:none");
+        renderMD();
+
     </script>
 
 

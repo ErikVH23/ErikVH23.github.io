@@ -23,10 +23,14 @@ img {
     border-radius: 13%;
 }
 
-.content {
+.content{
     position: relative;
-    float: left;
+    margin: 0 auto;
+    width: 700px;
+    display: flex;
+    justify-content: left;
 }
+
 .tab {
     text-align: center;
     background-color: grey;
@@ -56,9 +60,7 @@ img {
 
 .header {
     
-    position:relative;
-    float: left;
-    height: 230px;
-    width: 600px;
+    position:fixed;
+    float: center;
     
 }
